@@ -1,0 +1,41 @@
+.menu table{
+    color: blueviolet;
+    width: 100%;
+    text-align: center;
+}
+
+.menu .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #728394;
+  }
+  
+  .menu .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .menu .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #0563bb;
+    line-height: 0;
+  }
+  
+  .menu .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+
+
+  

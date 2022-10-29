@@ -1,0 +1,112 @@
+a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: greenyellow;
+    text-decoration: none;
+  }
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  
+  @media (max-width: 991px) {
+    #header {
+      width: 300px;
+      background: #fff;
+      border-right: 1px solid #e6e9ec;
+      left: -300px;
+    }
+  }
+  
+  .nav-menu {
+    padding: 0;
+    display: block;
+  }
+  
+  .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+  }
+  .nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: blueviolet;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+ 
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+
+}
+
+.nav-menu a span,
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: greenyellow;
+}
+
+@media (min-width: 992px) {
+
+    .nav-menu a,
+    .nav-menu a:focus {
+      width: 56px;
+    }
+  
+    .nav-menu a span,
+    .nav-menu a:focus span {
+      display: none;
+      color: black;
+    }
+  }
+  .nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  color: greenyellow;
+  background: blueviolet;
+}
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover>a span {
+  color: greenyellow;
+}
+.nav-menu a:hover,
+.nav-menu li:hover>a {
+  width: 100%;
+  color: greenyellow;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover>a span {
+  display: block;
+}
+  
+  
+  
