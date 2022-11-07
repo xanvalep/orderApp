@@ -1,7 +1,8 @@
+
 .menu table{
     color: blueviolet;
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 .menu .content h3 {
@@ -21,9 +22,7 @@
     align-items: center;
   }
   
-  .menu .content ul strong {
-    margin-right: 10px;
-  }
+  
   
   .menu .content ul i {
     font-size: 16px;
@@ -34,6 +33,14 @@
   
   .menu .content p:last-child {
     margin-bottom: 0;
+  }
+  .container-menu{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
   }
   
 

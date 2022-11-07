@@ -54,8 +54,12 @@ a {
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
-  border-radius: 50px;
-  background: blueviolet;
+  /*border-radius: 50px;*/
+  background: url(./img/cuadroR.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -88,8 +92,11 @@ a {
 .nav-foot .active,
 .nav-foot .active:focus,
 .nav-foot li:hover>a {
-  color: greenyellow;
-  background: blueviolet;
+  background: url(./img/cuadroR.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .nav-foot a:hover span,
 .nav-foot .active span,

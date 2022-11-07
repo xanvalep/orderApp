@@ -31,3 +31,17 @@
     margin-bottom: 0;
   }
   
+  .bigph{
+    width: 100%;
+  }
+ section img{
+    width: 100%;
+  }
+
+  h2{
+
+    background: url(./img/Grungy_Text_Effect.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+  }

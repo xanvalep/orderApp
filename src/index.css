@@ -1,7 +1,11 @@
 body {
-  background-image: url('./componentes/black-textured.jpg');
- color: blueviolet;
+  /*background-image: url('./componentes/black-textured.jpg');*/
+ color: white;
+ background-color: #45505b;
  font-family: 'Fuzzy Bubbles', cursive;
+}
+p{
+  font-size: 25.89px;
 }
 
 h1,
@@ -11,6 +15,7 @@ h4,
 h5,
 h6 {
   font-family: 'Kaushan Script', cursive;
+  
 }
 
 
@@ -20,13 +25,17 @@ section {
   overflow: hidden;
 }
 
+.section-title > p{
+  text-align: start;
+  padding-bottom: 30px;  
+}
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 109.66px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -39,11 +48,14 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 120px;
-  height: 1px;
+  width: 500px;
+  height: 128px;
   background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
+  bottom: 20px;
+  /*left: calc(50% - 60px);*/
+  transform-origin: center;
+  left: calc(50% - 230px);
+  z-index: -10000;
 }
 
 .section-title h2::after {
@@ -59,5 +71,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  font-family: 'Fuzzy Bubbles', cursive; 
+  
 }
 
