@@ -1,0 +1,124 @@
+/**/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: greenyellow;
+  text-decoration: none;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  //  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  //padding: 15px;
+  //  overflow-y: auto;
+}
+#header img {
+  width: 28px;
+}
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  padding: 4px 8px;
+  //margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  /*border-radius: 50px;*/
+  /*background: blueviolet;*/
+
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: greenyellow;
+}
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: #e6e9ec;
+}
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover > a span {
+  color: greenyellow;
+}
+.nav-menu a:hover,
+.nav-menu li:hover > a {
+  width: 100%;
+  color: greenyellow;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
+  display: block;
+}
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #header {
+    background-color: red;
+    width: 100%;
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) {
+  #header {
+    background-color: aqua;
+    width: 100%;
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) {
+  #header {
+    background-color: blueviolet;
+    width: 100%;
+  }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+  #header {
+    background-color: blue;
+    width: 100%;
+  }
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}

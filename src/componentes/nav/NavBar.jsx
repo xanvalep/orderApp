@@ -1,35 +1,53 @@
 import UserIndex from "..//users/UserIndex";
 import LoginView from "../Login";
 import Home from "../Home";
-import Menu from "../Menu";
+import Menu from "..//menu/Menu";
+import logo from "./logopizza.svg"
 import LogButton from "../nav/LogButton";
-import { Link, Route, Routes } from "react-router-dom"; 
+import "..//..//scss/nav.scss";
+import { Link, Route, Routes } from "react-router-dom";
 
- export default function NavBar (props) {
+export default function NavBar(props) {
+  return (
+    <div className="container">
+      <header
+        id="header"
+        className="d-flex flex-sm-column flex-md-row justify-content-around"
+      >
+        <div className="d-flex justify-content-center align-items-center">
+          <img src={logo} alt="Logo" />
+        </div>
+        <nav id="navbar" className="navbar nav-menu">
+          <ul className="d-flex flex-row justify-content-center">
+            <li>
+              <Link className="nav-link scrollto " to="/">
+                Home
+              </Link>
+            </li>
 
-  return(
-    <div className="mx-5 mt-5"> 
+            <li>
+              <Link className="nav-link scrollto" to="/menu">
+                Menu
+              </Link>
+            </li>
 
-    <header id="header" className="d-flex flex-column justify-content-center">
-    <nav id="navbar" className="navbar nav-menu">
-    <ul>
-        <li> <span><Link  className="nav-link scrollto active" to="/"><i className="bi bi-house-door-fill">Home</i></Link></span></li>
-        <li><a href="#about" className="nav-link scrollto"><i className="bi bi-person-fill"></i><span>About</span></a></li>
-        <li> <span><Link  className="nav-link scrollto active" to="/menu"><i className="bi bi-house-door-fill">Menu</i></Link></span></li>
-        <li><a href="#contact" className="nav-link scrollto"><i className="bi bi-geo-alt-fill"></i><span>Contact</span></a></li>
-        <li><span><LogButton logged={props.logged } /></span></li>
-        <li> <span><Link  className="nav-link scrollto active" to="/userAdmin"><i className="bi bi-house-door-fill">Admin</i></Link></span></li>
-    </ul>
-     </nav> 
-    </header>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/menu" element={<Menu/>}/>
-      <Route path="/login" element={<LoginView/>}/>
-      <Route path="/userAdmin" element={<UserIndex/>}/>
+            <li>
+              <Link className="nav-link scrollto" to="/userAdmin">
+                Admin
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="d-flex justify-content-center align-items-center">
+          <LogButton logged={props.logged} />
+        </div>
+      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/login" element={<LoginView />} />
+        <Route path="/userAdmin" element={<UserIndex />} />
       </Routes>
-    
-    
     </div>
   );
 }

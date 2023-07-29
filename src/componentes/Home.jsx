@@ -1,30 +1,20 @@
-import React from 'react';
-import About from './About';
-import Contact from './Contact';
+import React from "react";
+import About from "./About";
+import Contact from "./Contact";
 
-
-
-export default function Home () {
-    return(
-      <div>
-      
-        <section id="hero" className="d-flex flex-column justify-content-center">
+export default function Home() {
+  return (
+    <div>
+      <section id="hero" className="d-flex flex-column justify-content-center">
         <div className="container " data-aos="zoom-in" data-aos-delay="100">
-      <div className="d-flex justify-content-center align-content-center">
-          <h1>Crazy Food</h1>       
-      </div>
-          
+          <div className="d-flex justify-content-center align-content-center">
+            <h1>Pizza</h1>
+          </div>
         </div>
-        
-        
       </section>
-      <About/> 
-      
-      <Contact/> 
-      
-      </div> 
-      
-        
-      );
-}
+      <About />
 
+      <Contact />
+    </div>
+  );
+}
